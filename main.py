@@ -1,44 +1,27 @@
-text = "Hello, Python!"
-print (text[0]) 
-print (text[0:5]) 
-print (text[4:10])
-print (text[0:14])
-print (text[7:]) 
-print (text[:5]) 
-print (text[:]) 
-print (text[-1]) 
-print (text[-1:-14]) 
-print (text[::2]) 
-print (text[::-1]) 
-print (text+"Nice to code you")
-print (text[-1]) 
+from math import prod
+# Запрос числа от пользователя
+a = input()
 
-my_list =[True, 786, 3.14, 'text', 70.2]
-second_list =[123, 'text']
+# Преобразование числа в список целых чисел
+b = [int(x) for x in a]
 
-print (my_list)
-print (my_list[0])
-print (my_list[1:3])
-print (my_list[2:])
-print (second_list *2)
-print (my_list + second_list) 
+# Преобразование числа в список строк
+c = [str(x) for x in a]
 
-my_typle =(True, 786, 3.14, 'text', 70.2)
-second_tuple =(123, 'text')
+# Проверка является ли сумма его цифр двузначным числом вывод "Да" или "Нет"
+d = sum(b)
+print("является ли сумма его цифр двузначным числом: ", 'Да' if 9 < d < 100 else 'Нет')
 
-print (my_typle)
-print (my_typle[0])
-print (second_tuple *2)
-print (my_typle + second_tuple) 
+# является ли произведение его цифр трехзначным числом вывод "Да" или "Нет"
+e = prod(b)
+print("является ли произведение его цифр трехзначным числом: ", 'Да' if 99 < e < 1000 else 'Нет')
 
-my_dict = { }
-my_dict["country"] = "Mexico"
-print (my_dict["country"])
+#  больше ли числа а произведение его цифр вывод "Да" или "Нет"
+f = int(''.join(c))
+print( "больше ли числа а произведение его цифр: ", 'Да' if e >= f else 'Нет')
 
-another_dict = {"number":23, 2: True, "my_list" :[1,2,3]}
-print (another_dict.keys())
-print (another_dict.values())
+# кратна ли пяти сумма его цифр вывод "Да" или "Нет"
+print( "кратна ли пяти сумма его цифр: ", 'Да' if d % 5 == 0 else 'Нет')
 
-s = (set())
-
-s = {"hi", "bye"}
+# кратна ли сумма его цифр числу а вывод "Да" или "Нет"
+print("кратна ли сумма его цифр числу а: ", 'Да' if d % int(a) == 0 else 'Нет')
