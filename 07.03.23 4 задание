@@ -1,0 +1,9 @@
+from math import *
+r = float(input())
+a= float(input())
+b = sqrt(a**2 + a**2)
+if r == b / 2:
+    print("Вписанно")
+else:
+    print("Не вписанно")
+

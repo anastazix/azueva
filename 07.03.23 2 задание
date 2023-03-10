@@ -1,0 +1,6 @@
+s = int (input ()) r = int (input ()) d = r * 2 if s
+>=d:
+  print ('PP?P8QP5QQQ')
+  else
+:
+  print ('PP5 P2P?P8QP5QQQ')

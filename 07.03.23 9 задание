@@ -1,0 +1,6 @@
+a= float(input())
+b= float(input())
+a = a / 1000
+b = b * 0.45
+print("Большее расстояние = ", max(a, b))
+

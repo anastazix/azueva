@@ -1,0 +1,7 @@
+s = int(input())
+r = int(input())
+d = r * 2
+if s >= d:
+    print('Впишется')
+else:
+    print('Не впишется')

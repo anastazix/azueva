@@ -1,0 +1,8 @@
+a = float(input())
+b= 0
+if a < 0:
+    b = a**2
+    print(b)
+elif a > 0:
+    b = 1 / (a**2)
+    print(b)
