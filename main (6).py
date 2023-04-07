@@ -1,10 +1,3 @@
-a = int(input("Введите первое число: "))
-b = int(input("Введите второе число: "))
-sum = a+ b
-z = a - b
-q = a * b
-w = a / b
-print("Сумма равна", sum)
-print("Разность равна", z)
-print("Произведение равно", q)
-print("Частное равно", w)
+
+for i in range(1, 16):
+    print(-1 + 2 * i)

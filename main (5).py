@@ -1,4 +1,3 @@
-m = float(input("Введите массу тела: "))
-v = float(input("Введите объем тела: "))
-d = m / v
-print("Плотность тела равна", d)
+
+for i in range(10):
+    print(2 * i)
