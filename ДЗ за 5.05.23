@@ -1,0 +1,46 @@
+№1
+for i in range(0, 20):
+    print(i, "сm = ",i * 2.54, "inch")
+№2
+y = int ( input ('введите курс доллар в рублях :'))
+for i in range (1, 20):
+    p = i * y
+    print (p)
+№3
+e = int(input())
+for i in range (1, 20):
+    p = e**i
+    print (p)
+№4
+e =0.1
+for i in range (1, 20):
+    p = i+e
+    print (p)
+№5
+for i in range (21,30):
+    p = i/10
+    print (p)
+№6
+for i in range (1, 21):
+    if i%2==0:
+        print(i)
+№7
+for i in range (1, 16):
+    if i%2!=0:
+        print(i)
+№8
+import math
+for i in range (1, 21):
+    sqrt=math.sqrt(i)
+    print(sqrt)
+№9
+a=int(input())
+for i in range (2, 11):
+    p=a*i
+    print(p)
+№10
+import math
+sqrt=math.sqrt
+for x in range (1,100):
+    y=sqrt(x)
+    print(y)
